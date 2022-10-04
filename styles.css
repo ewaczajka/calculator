@@ -1,0 +1,81 @@
+/*grid*/
+.calculator {
+	display: grid;
+	max-width: 400px;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 5px;
+	padding: 5px;
+}
+.result-box {
+	grid-column: 1 / span 4;
+}
+.cancel {
+	grid-column: 1 / span 2;
+}
+.operations {
+	grid-row: 2 / span 5;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+}
+.numbers {
+	grid-column: 1 / span 3;
+	grid-row: 3 / span 3;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+.zero {
+	grid-column: 1 / span 2;
+}
+
+/*styles*/
+button {
+	border: none;
+	font-family: Arial;
+	font-size: 40px;
+	padding: 15px;
+}
+button:focus {
+	outline: none;
+}
+
+.calculator {
+	background-color: #000000;
+}
+.result-box {
+	color: #ffffff;
+	font-family: Arial;
+	font-size: 40px;
+	text-align: right;
+	padding: 20px;
+}
+.fas {
+	font-size: 30px;
+}
+
+.btn-grey {
+	background-color: #d8d9db;
+	text-align: center;
+	padding: 15px;
+}
+.btn-grey:hover {
+	background-color: #ebebeb;
+}
+.btn-grey:focus {
+	background-color: #bbbcbe;
+}
+
+.btn-orange {
+	background-color: #df974c;
+	color: #ffffff;
+	text-align: center;
+	padding: 15px;
+}
+.btn-orange:hover {
+	background-color: #dfb07e;
+}
+.btn-orange:focus {
+	background-color: #dd8d37;
+}

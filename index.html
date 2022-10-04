@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://kit.fontawesome.com/c263aa7551.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="result-box">
+      <p data-id="result">0</p>
+    </div>
+
+    <button data-id="cancel" class="cancel btn-grey">C</button>
+    <button data-id="backspace" class="backspace btn-grey">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+
+    <div class="operations">
+      <button data-id="operation" data-value="divide" class="btn-orange">
+        <i class="fas fa-divide"></i>
+      </button>
+      <button data-id="operation" data-value="times" class="btn-orange">
+        <i class="fas fa-times"></i>
+      </button>
+      <button data-id="operation" data-value="minus" class="btn-orange">
+        <i class="fas fa-minus"></i>
+      </button>
+      <button data-id="operation" data-value="plus" class="btn-orange">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button data-id="operation" data-value="equals" class="btn-orange">
+        <i class="fas fa-equals"></i>
+      </button>
+    </div>
+
+    <div class="numbers">
+      <button data-id="num" data-value="7" class="n-7 btn-grey">7</button>
+      <button data-id="num" data-value="8" class="n-8 btn-grey">8</button>
+      <button data-id="num" data-value="9" class="n-9 btn-grey">9</button>
+      <button data-id="num" data-value="4" class="n-4 btn-grey">4</button>
+      <button data-id="num" data-value="5" class="n-5 btn-grey">5</button>
+      <button data-id="num" data-value="6" class="n-6 btn-grey">6</button>
+      <button data-id="num" data-value="1" class="n-1 btn-grey">1</button>
+      <button data-id="num" data-value="2" class="n-2 btn-grey">2</button>
+      <button data-id="num" data-value="3" class="n-3 btn-grey">3</button>
+    </div>
+
+    <button data-id="num" data-value='0' class="zero btn-grey">0</button>
+    <button data-id="num" data-value='.' class="point btn-grey">.</button>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
